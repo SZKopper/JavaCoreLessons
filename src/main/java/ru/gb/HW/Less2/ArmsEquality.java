@@ -22,11 +22,11 @@ public class ArmsEquality {
                     if (rSum < lSum) {
                         rSum = rSum + arr[j- 1];
                     } else {
-                        break;
+                        return true; // изменил оператор перехода break (для досрочного выхода из цикла) на return true
                     }
                 }
                 if (lSum == rSum){
-                    break;
+                    return true; // изменил оператор перехода break (для досрочного выхода из цикла) на return true для
                 }
             }
         System.out.println(lSum + " " + rSum);
