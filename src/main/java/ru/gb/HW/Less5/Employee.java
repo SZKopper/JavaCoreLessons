@@ -25,7 +25,7 @@ public class Employee {
 
     //Внутри класса «Сотрудник» написать метод, который выводит информацию об объекте в консоль.
     public void info() {
-        System.out.println("ФИО " + fio + " должность " + position + " email " + email + " телефон " + number + " зарплата " + salary + " возраст " + age);
+        System.out.printf("ФИО: %s%nДолжность: %s%nEmail: %s%nТелефон:%s%nЗарплата: %s%nВозраст: %d%n%n", fio, position, email, number, salary, age);
 
     }
 }
