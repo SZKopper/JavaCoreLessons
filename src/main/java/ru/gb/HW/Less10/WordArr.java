@@ -12,7 +12,7 @@ public class WordArr {
         //Создадим коллекцию для хранения уникальных слов
         List<String> unique = new ArrayList<>();
 
-        //Создадим переменную iterator для перебора элементов коллекции
+       /* //Создадим переменную iterator для перебора элементов коллекции
         Iterator<String> iterator = list.iterator();
         //Проходим циклом пока в коллекции есть элементы
         while (iterator.hasNext()){
@@ -22,6 +22,12 @@ public class WordArr {
             if (!unique.contains(next)){
                 //Добавляем элемент в коллекцию unique
                 unique.add(next);
+            }
+        }*/
+
+        for (String s : list) {
+            if (!unique.contains(s)){
+                unique.add(s);
             }
         }
 
