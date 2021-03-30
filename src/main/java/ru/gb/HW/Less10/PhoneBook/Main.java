@@ -12,6 +12,6 @@ public class Main {
         newEntry.addNewEntry(89999999732L, "Timber");
         newEntry.addNewEntry(89999999754L, "Tasman");
         //Выполним поис по фамилии
-        newEntry.get("Tomson");
+        newEntry.get("Tomsons");
     }
 }
