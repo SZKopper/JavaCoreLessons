@@ -3,10 +3,10 @@ package ru.gb.HW.Less12;
 import java.util.Arrays;
 
 public class HW {
-    static final int SIZE = 10000000;
+    static final int SIZE = 10_000_000;
     static final int HALF = SIZE/2;
 
-    public void calculate(float[] arr){
+    public void arrCalculate(float[] arr){
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (float)(arr[i] * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) * Math.cos(0.4f + i / 2));
         }
