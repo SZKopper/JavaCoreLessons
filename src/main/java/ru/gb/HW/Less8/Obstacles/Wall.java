@@ -2,6 +2,7 @@ package ru.gb.HW.Less8.Obstacles;
 
 import ru.gb.HW.Less8.Participants.Actions;
 
+//Имплементируем от Obstacles для возможности переиспользования общих методом в дальнейшего создания массива припятствий
 public class Wall implements Obstacles {
     private int height;
 
@@ -9,6 +10,7 @@ public class Wall implements Obstacles {
         this.height = height;
     }
 
+    @Override
     public int getHeight() {
         return height;
     }
@@ -18,8 +20,9 @@ public class Wall implements Obstacles {
         return 0;
     }
 
+    @Override
     public void enterWall(Actions actions){
-        actions.jump(height);
+        actions.jump();
     }
 
     @Override

@@ -27,16 +27,12 @@ public class Robot implements Actions{
     }
 
     @Override
-    public void run(int lenght) {
-        if (runLim >= lenght){
-            System.out.println("Робот " + name + " пробежал испытание");
-        }
+    public void run() {
+        System.out.println("Робот " + name + " пробежал испытание");
     }
 
     @Override
-    public void jump(int height) {
-        if (jumpLim >= height){
-            System.out.println("Робот " + name + " перепрыгнул испытание");
-        }
+    public void jump() {
+        System.out.println("Робот " + name + " перепрыгнул испытание");
     }
 }

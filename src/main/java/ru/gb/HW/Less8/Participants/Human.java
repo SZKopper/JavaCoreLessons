@@ -27,16 +27,11 @@ public class Human implements Actions{
     }
 
     @Override
-    public void run(int lenght) {
-        if (runLim >= lenght){
-            System.out.println("Атлет " + name + " пробежал испытание");
-        }
+    public void run() {
+        System.out.println("Атлет " + name + " пробежал испытание");
     }
-
     @Override
-    public void jump(int height) {
-        if (jumpLim >= height){
-            System.out.println("Атлет " + name + " перепрыгнул испытание");
-        }
+    public void jump() {
+        System.out.println("Атлет " + name + " перепрыгнул испытание");
     }
 }
