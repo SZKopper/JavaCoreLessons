@@ -84,7 +84,7 @@ public class HW {
         //Расчитываем и выводим на экран время сборки в 1 массив
         System.out.println("Collection time in one array: " + (((double) System.currentTimeMillis() - a) / 1000) + " sec");
 
-        //РАсчитываем и выводим время работы второго метода
+        //Расчитываем и выводим время работы второго метода
         double b = ((double) System.currentTimeMillis() - a) / 1000;
         System.out.println("Method2 work time: " + b + " sec");
     }
